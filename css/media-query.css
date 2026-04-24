@@ -1,0 +1,93 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+@media screen and (max-width: 1024px) {
+    #Home .content h1{
+        font-size: 48px;
+    }
+    
+    .carousel-control-prev {
+        left: 10px;
+    }
+    .carousel-control-next {
+  right: 20px;
+}
+  #Home .content h1{
+        font-size: 48px;
+    }
+   
+
+}
+@media (max-width: 1000px) {
+  #Properties .col-md-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+    .header h2{
+        font-size: 36px;
+    }
+    .header p{
+        width: 80%;
+    }
+    .numbers {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+    
+    #Home .content h1{
+        font-size: 48px;
+    }
+    
+    
+    .carousel-control-prev ,
+    .carousel-control-next
+    {
+        display: none;
+    }
+    .footer-data{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .Connect-us p{
+        padding-block: 10px;
+    }
+    .Connect-us .icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 10px;
+    }
+    .Connect-us .icons i {
+                    
+    text-align: center;     
+    padding: 10px 0;
+    border-radius: 10px;
+  }
+  }
+  
+@media screen and (max-width: 576px) {
+     /* .numbers {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  } */
+   .header h2{
+        font-size: 28px;
+    }
+    .header p{
+        width: 100%;
+    }
+    .img-box .active-img{
+        left: -5px;
+    }
+}
