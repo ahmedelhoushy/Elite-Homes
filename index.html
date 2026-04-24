@@ -23,7 +23,7 @@
      <nav class="navbar py-3 fixed-top navbar-expand-lg bg-white ">
   <div class="container">
     <a class="navbar-brand" href="#">EliteHomes</a>
-    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler border-0 shadow-none" aria-label="Toggle navigation" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 
       <i class="fa-solid fa-bars bars"></i>
     </button>
@@ -73,15 +73,15 @@
     <div class="col-lg-6">
       <label class="form-label">Location</label>
       <div class="position-relative">
-  <input type="text" class="form-control ps-5" placeholder="Enter city, neighborhood, or ZIP code">
+  <input type="text" id="Location" class="form-control  ps-5" placeholder="Enter city, neighborhood, or ZIP code">
 
   <i class="fa-solid fa-location-dot position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
 </div>
     </div>
 
     <div class="col-lg-3">
-       <label class="form-label">Property Type</label>
-  <select class="form-select" name="select">
+       <label class="form-label" for="propertyType">Property Type</label>
+  <select id="propertyType" class="form-select" name="select">
     <option selected>All Types</option>
     <option>House</option>
     <option>Apartment</option>
@@ -92,8 +92,8 @@
     </div>
 
     <div class="col-lg-3">
-      <label class="form-label">Price Range</label>
-  <select class="form-select" name="select">
+      <label class="form-label" for="PriceRange">Price Range</label>
+  <select id="PriceRange" class="form-select" name="select">
     <option selected>Any Price</option>
     <option>$0 - $500K</option>
     <option>$500K - $1M</option>
@@ -102,8 +102,8 @@
   </select>
     </div>
      <div class="col-lg-3">
-      <label class="form-label">Bedrooms</label>
-  <select class="form-select" name="select">
+      <label class="form-label" for="Bedrooms">Bedrooms</label>
+  <select id="Bedrooms" class="form-select" name="select">
     <option selected>Any</option>
     <option>1+</option>
     <option>2+</option>
@@ -113,8 +113,8 @@
   </select>
     </div>
       <div class="col-lg-3">
-      <label class="form-label">Bedrooms</label>
-  <select class="form-select" name="select">
+      <label class="form-label" for="Bedrooms">Bedrooms</label>
+  <select id="Bedrooms" class="form-select" name="select">
     <option selected>Any</option>
     <option>1+</option>
     <option>2+</option>
@@ -134,7 +134,7 @@
     
 
   </div>
-<button class="btn w-100 p-3  mt-3"> <i class="fa-solid fa-magnifying-glass pe-3"></i>  Search Properties</button>
+<button class="btn w-100 p-3  mt-3" > <i class="fa-solid fa-magnifying-glass pe-3"></i>  Search Properties</button>
 </form>
   <div class="numbers  text-white gap-5 mt-4">
       <div class="number">
@@ -783,11 +783,11 @@
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+  <button class="carousel-control-prev" aria-label="Previous slide" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
     <i class="fa-solid fa-angle-left "></i>
     
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" aria-label="Next slide" data-bs-slide="next">
   <i class="fa-solid fa-angle-right "></i>
   </button>
 </div>
@@ -1078,8 +1078,8 @@
       <input type="text" class="form-control" placeholder="+1(555)000-0000">
     </div>
     <div class="mb-3 col-lg-12">
-  <label class="form-label">I'm interested in</label>
-  <select class="form-select" name="select">
+  <label class="form-label" for="SelectAService">I'm interested in</label>
+  <select id="SelectAService" class="form-select" name="select">
     <option selected>Select a service</option>
     <option>Buying a home</option>
     <option>Selling a home</option>
@@ -1134,9 +1134,9 @@
                     <i class="fa-brands fa-youtube"></i>
                 </div>
 </div>
-<p class="text-center p-3">Made with <i class="fa-solid fa-heart"></i> for finding your dream home</p>
+<p class="text-center p-3">Made with <i class="fa-solid fa-heart  aria-label="Add to favorites"></i> for finding your dream home</p>
 </div>
   </footer>
-<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.min.js" defer></script>
 </body>
 </html>
